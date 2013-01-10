@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'builder'
 
 module MyrddinReader
   class Publisher < Sinatra::Base
