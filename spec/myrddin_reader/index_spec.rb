@@ -7,9 +7,8 @@ module MyrddinReader
     end
 
     let(:index) { Index.new(@text) }
+    subject { index }
 
-    it 'inits and builds an index' do
-      index.should have(3).boards
-    end
+    it { should have(3).boards }
   end
 end
