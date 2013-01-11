@@ -14,4 +14,5 @@ end
 
 require 'myrddin_reader/bboard'
 require 'myrddin_reader/bot'
+require 'myrddin_reader/index'
 require 'myrddin_reader/publisher'
