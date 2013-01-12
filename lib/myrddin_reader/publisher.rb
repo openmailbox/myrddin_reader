@@ -11,13 +11,8 @@ module MyrddinReader
     end
 
     get '/' do
-      index = Index.new(@@bot.bb_list)
-      ret = "BBoard Index<br>"
-      index.boards.each do |board|
-        ret << "#{board.number} - #{board.title}<br>"
-      end
-
-      ret
+      @index = Index.new(@@bot.bb_list)
+      haml :index
     end
 
     private

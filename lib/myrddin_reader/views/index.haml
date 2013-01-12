@@ -1,0 +1,5 @@
+%h2 BBoard Index
+- @index.boards.each do |board|
+  = "#{board.number} - "
+  %a{href: "/#{board.title.downcase.gsub(' ', '_')}"}= board.title
+  %br
