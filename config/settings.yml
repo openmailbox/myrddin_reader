@@ -13,3 +13,11 @@ production:
   mush_password: bot
   web_username: user
   web_password: changeme
+
+development:
+  mush_host: 127.0.0.1
+  mush_port: 4201
+  mush_name: Bot
+  mush_password: bot
+  web_username: user
+  web_password: changeme   
