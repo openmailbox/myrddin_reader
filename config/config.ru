@@ -1,3 +1,4 @@
+#\ -p 8026
 $:.unshift File.expand_path('../../lib', __FILE__)
 require 'myrddin_reader'
 

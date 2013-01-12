@@ -1,0 +1,15 @@
+test:
+  mush_host: 127.0.0.1
+  mush_port: 4201
+  mush_name: Bot
+  mush_password: bot
+  web_username: test
+  web_password: testing
+
+production:
+  mush_host: 127.0.0.1
+  mush_port: 4201
+  mush_name: Bot
+  mush_password: bot
+  web_username: user
+  web_password: changeme

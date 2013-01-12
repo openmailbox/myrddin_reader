@@ -5,3 +5,4 @@ require 'myrddin_reader'
 require 'capybara/cucumber'
 
 Capybara.app = MyrddinReader::Publisher
+
