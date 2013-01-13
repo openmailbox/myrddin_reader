@@ -1,6 +1,9 @@
 When /^I login with username "(.*?)" and password "(.*?)"$/ do |user, password|
   page.driver.browser.basic_authorize(user, password)
-  visit '/'
+end
+
+Given /^I am logged in$/ do
+  step 'I login with username "test" and password "testing"'
 end
 
 Then /^I should see "(.*?)"$/ do |text|
@@ -18,3 +21,4 @@ end
 Then /^I should see a link to "(.*?)"$/ do |link|
   page.should have_link('link')
 end
+

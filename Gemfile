@@ -1,10 +1,9 @@
 source "https://rubygems.org"
 
-gem 'builder'
 gem 'haml'
 gem 'sinatra'
 
-group :test do
+group :test, :development do
   gem 'capybara'
   gem 'cucumber'
   gem 'pry'

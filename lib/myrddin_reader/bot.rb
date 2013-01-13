@@ -20,6 +20,10 @@ module MyrddinReader
       bb_command('list')
       @history.last
     end
+    
+    def bb_index(board)
+      bb_command('read', board)
+    end
 
     private
 
@@ -29,8 +33,8 @@ module MyrddinReader
       super(options) { |data| read(data) }
     end
 
-    def bb_command(command)
-      cmd "#{@prefix}bb#{@split}#{command}"
+    def bb_command(command, *args)
+      cmd "#{@prefix}bb#{@split}#{command} #{args.join(' ')}"
     end
 
     def flush

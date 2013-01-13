@@ -84,7 +84,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  builder
   capybara
   cucumber
   haml
